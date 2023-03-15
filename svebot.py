@@ -7,7 +7,7 @@ import openai
 #OpenAI API key
 aienv = os.getenv('OPENAI_KEY')
 if aienv == None:
-    openai.api_key = "Your OpenAI key"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -15,7 +15,7 @@ print(aienv)
 #Telegram bot key
 tgenv = os.getenv('TELEGRAM_KEY')
 if tgenv == None:
-    tgkey = "Your Telegram Key"
+    tgkey = "6165836886:AAEWLR4u2DhdjavUWZIhCcC3C-2BNNCCnUM"
 else:
     tgkey = tgenv
 print(tgenv)
@@ -66,8 +66,8 @@ def start(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Makise Kurisu'
-        username = 'thewickedkarma'
+        botname = 'SveBot'
+        username = 'SveChat_bot'
         update.message.reply_text('Hi')
         return 
     else:
@@ -93,8 +93,8 @@ def reset(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Makise Kurisu'
-        username = 'thewickedkarma'
+        botname = 'SveBot'
+        username = 'SveChat_bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return
     if tim == 1:
